@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+
+# SQLite database files
+*.db
+carebridgemini-db
+backend/carebridgemini-db
+
+# Logs and environment
+*.log
+.env
+.DS_Store

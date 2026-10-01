@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CareBridge Mini</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding-top: 50px; background: #f0f4f8; }
+    .card { background: white; max-width: 400px; margin: 0 auto; padding: 30px; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    h1 { font-size: 24px; color: #1e293b; }
+    .status { font-size: 20px; font-weight: bold; margin: 20px 0; padding: 10px; border-radius: 8px; }
+    .pending { background: #fee2e2; color: #ef4444; } /* Red: Pending */
+    .taken { background: #dcfce7; color: #22c55e; }   /* Green: Taken */
+    button { background: #2563eb; color: white; border: none; padding: 15px 30px; font-size: 18px; border-radius: 10px; cursor: pointer; font-weight: bold; width: 100%; }
+    button:disabled { background: #94a3b8; cursor: not-allowed; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 id="med-name">Loading medication...</h1>
+    <p>Stock remaining: <span id="med-stock">--</span> pills</p>
+    <div id="med-status" class="status pending">PENDING</div>
+    <button id="btn-take">💊 I HAVE TAKEN MY MEDICATION</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
